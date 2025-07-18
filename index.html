@@ -1,4 +1,136 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+classes:
+  - landing
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/header-bg.svg
+  actions:
+    - label: "포트폴리오 보기"
+      url: "/portfolio/"
+    - label: "연락하기"
+      url: "/contact/"
+excerpt: "안드로이드 개발자에서 AI 개발자로 전환하는 김준형의 포트폴리오입니다."
+intro: 
+  - excerpt: '음성 AI 및 머신러닝 프로젝트 경험을 바탕으로 AI 개발자로 성장하고 있습니다.'
+feature_row:
+  - image_path: /assets/images/feature-ai.svg
+    alt: "AI 개발"
+    title: "AI 개발 경험"
+    excerpt: "음성 AI 관련 프로젝트 경험을 통해 실시간 음성 인식 및 자연어 처리 시스템을 개발했습니다."
+    url: "/portfolio/voice-ai-project/"
+    btn_label: "자세히 보기"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/feature-android.svg
+    alt: "안드로이드 개발"
+    title: "안드로이드 개발 경험"
+    excerpt: "안드로이드 애플리케이션 개발 경험을 통해 사용자 중심의 모바일 솔루션을 제공했습니다."
+    url: "/portfolio/android-app-development/"
+    btn_label: "자세히 보기"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/feature-ml.svg
+    alt: "머신러닝"
+    title: "머신러닝 프로젝트"
+    excerpt: "데이터 분석 및 머신러닝 모델 개발을 통해 비즈니스 문제를 해결했습니다."
+    url: "/portfolio/machine-learning-project/"
+    btn_label: "자세히 보기"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
+
+## 기술 스택
+
+<div class="skills-overview">
+  <div class="skill-category">
+    <h3>프로그래밍 언어</h3>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C</li>
+    </ul>
+  </div>
+  
+  <div class="skill-category">
+    <h3>프레임워크 & 라이브러리</h3>
+    <ul>
+      <li>TensorFlow</li>
+      <li>PyTorch</li>
+      <li>Android SDK</li>
+    </ul>
+  </div>
+  
+  <div class="skill-category">
+    <h3>개발 분야</h3>
+    <ul>
+      <li>음성 AI</li>
+      <li>머신러닝</li>
+      <li>안드로이드 개발</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cta-container">
+  <a href="/about/" class="btn btn--primary btn--large">더 알아보기</a>
+  <a href="/contact/" class="btn btn--success btn--large">연락하기</a>
+</div>
+
+<style>
+.skills-overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.skill-category {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skill-category h3 {
+  margin-top: 0;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-category li {
+  padding: 5px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.skill-category li:before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+}
+
+.cta-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn--large {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+</style>
